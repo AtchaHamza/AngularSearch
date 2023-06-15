@@ -1,0 +1,16 @@
+.list-item-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    gap: 2rem;
+    padding: 0.5rem 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #26020217, #ffffff00) 10;
+
+    .list-item-image{
+        height: inherit;
+    }
+}

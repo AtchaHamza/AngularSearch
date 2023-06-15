@@ -1,0 +1,12 @@
+<app-home-header (searchTextChanged) = "onSearchTextChanged($event)"> </app-home-header>
+<div>
+    <div *ngIf="true; else noMessage" class="list-items">
+        <div *ngFor="let p of planetArr | planetFilter: searchText">
+            <app-home-list-item [planet]="p"></app-home-list-item>
+        </div>
+    </div>
+      
+    <ng-template #noMessage>
+        <p>No message to display.</p>
+    </ng-template>
+</div>

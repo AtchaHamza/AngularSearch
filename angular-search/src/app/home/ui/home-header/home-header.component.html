@@ -1,0 +1,11 @@
+<header>
+    <h1 class="header-logo">Planets</h1>
+    <div class="header-search-div">
+        
+        <input type="text" class="header-search-bar" 
+        *ngIf="toggleSearch" [@inOutAnimation]
+        [(ngModel)]="searchText" (input)="onSearchInput()">
+
+        <mat-icon fontIcon="search" class="header-search-icon" (click)="searchToggle()"></mat-icon>
+    </div>
+</header>
